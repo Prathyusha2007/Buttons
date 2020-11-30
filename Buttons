@@ -1,0 +1,38 @@
+from tkinter import *
+
+
+root = Tk()
+
+
+label=Label(root,text="Do you have salt in your thootpaste?")
+
+
+label.config(font=("Berlin Sans FB",25))
+
+
+def click():
+  label_1=Label(root,text="Uh oh!You don't have a chance to meet SAMANTHA!")
+  label_1.config(font=("Cooper Black",18))
+  label_1.pack()
+btn=Button(root,text="Yes",width=22,fg="Pink",bg="Blue",command = click)
+
+
+btn.config(font=("Berlin Sans FB",21))
+
+def click_2():
+  label_2=Label(root,text="Yahoo! You have a chance to meet SAMANTHA!")
+  label_2.config(font=("Cooper Black",18))
+  label_2.pack()
+btn_2=Button(root,text="No",width=22,fg="pink",bg="Blue",command=click_2)
+
+btn_2.config(font=("Berlin Sans FB",21))
+
+
+label.pack()
+
+btn.pack()
+
+btn_2.pack()
+
+
+root.mainloop()
