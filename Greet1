@@ -1,0 +1,29 @@
+from tkinter import *
+
+
+root = Tk()
+
+
+def happy_birthday():
+  label_2.pack()
+  
+  
+label_2=Label(root,text="Happy Birthday!❤",fg="red",bg="Black")
+label_2.config(font=("Berlin Sans FB",25))
+
+label=Label(root,text="Welcome to the Greetings Application!")
+
+
+label.config(font=("Berlin Sans FB",25))
+
+label.pack()
+
+
+btn=Button(root,text="Click Me!!",width=12,fg="Pink",bg="Blue",height=2,command=happy_birthday)
+
+
+btn.config(font=("Berlin Sans FB",21))
+
+
+btn.pack()
+root.mainloop()
